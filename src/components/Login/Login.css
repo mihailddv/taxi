@@ -1,0 +1,21 @@
+.login-form {
+  position: absolute;
+  top: 30%;
+  width: 400px;
+  padding: 30px;
+}
+
+.login-form__caption {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form__input {
+  margin-bottom: 10px;
+  border: 1px solid transparent;
+}
+
+.form__input.input.error > input {
+  border: 1px solid red;
+}

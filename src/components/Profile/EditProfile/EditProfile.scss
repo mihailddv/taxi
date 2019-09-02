@@ -1,0 +1,24 @@
+.edit-form {
+  margin-top: 20%;
+  padding: 30px;
+}
+
+.form-edit {
+  margin-top: 20px;
+
+  &__container {
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    position: relative;
+    width: calc((100%/2) - 20px);
+    margin-bottom: 30px;
+    
+    p.Mui-required {
+      position: absolute;
+      top: 100%;
+    }
+  }
+}
