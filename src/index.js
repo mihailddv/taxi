@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import getStore from './store';
 import App from './components/App';
 
-import './style.css';
+import './style.scss';
 const store = getStore();
 
 ReactDOM.render(

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
+import { NavLink } from 'react-router-dom';
 import { Button } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 import "./Nav.scss";
@@ -23,12 +24,19 @@ class NavBar extends Component {
     return (
       <React.Fragment>
         <Button.Group className="nav" floated="right" color="red">
-          <Button className="nav__item" as="a" href="/map">
+
+          <NavLink
+            className="nav__item"
+            to="/map"
+          >
             Карта
-          </Button>
-          <Button className="nav__item" as="a" href="/profile">
+          </NavLink>
+          <NavLink
+            className="nav__item"
+            to="/profile"
+          >
             Профиль
-          </Button>
+          </NavLink>
           <Button className="nav__item" onClick={this.logout}>Выход</Button>
         </Button.Group>
       </React.Fragment>

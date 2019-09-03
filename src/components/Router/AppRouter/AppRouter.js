@@ -5,11 +5,11 @@ import Map from '../../Map';
 
 const AppRouter = ({ match }) => {
   return (
-    <div className=''>
+    <div>
       <Switch>
-        <Route path={`${match.url}map`} component={Map} />
-        <Route path={`${match.url}profile`} component={EditProfile} />
-        <Redirect to={`${match.url}map`} />
+        <Route path="/map" component={Map} />
+        <Route path="/profile" component={EditProfile} />
+        <Redirect to="/map" />
       </Switch>
     </div>
   );

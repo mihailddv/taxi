@@ -2,10 +2,30 @@
   display: flex;
 
   &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    height: 30px;
+    padding: 0 20px;
+    background-color: #db2828;
+    color: #fff;
+    font-size: 14px;
+    transition: .3s;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 30px;
+
+    &:hover {
+      color: #fff;
+      background: #d01919;
+    }
+
     &.ui.button {
       margin-left: 30px;
       border-radius: 5px;
       font-size: 14px;
+      line-height: 11px;
 
       &:last-child {
         background: #000;
