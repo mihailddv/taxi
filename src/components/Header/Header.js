@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { logout, getIsAuthorized } from '../../../../modules/Auth';
-import NavBar from './NavBar';
+import { logout, getIsAuthorized } from '../../modules/Auth';
+import NavBar from '../NavBar';
 
 const Header = ({ isAuthorized, logout }) => {
   return (
